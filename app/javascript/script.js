@@ -1,6 +1,9 @@
 
 var dinheiro = 300;
 
+var humburguer_pronto = 0;
+var cachorro_quente_pronto = 0;
+
 //ingredientes para hamburguer
 var ovos = 0;
 var tomate = 0;
@@ -70,10 +73,44 @@ function Criar_Hamburguer(){
 		bacon--;
 		pao_hamburguer--;
 		caixa_hamburguer--;
+		humburguer_pronto++;
 	}
 
 }
 
+
 function Criar_CachorroQuente(){
+
+    var ingredientes_completos = 0;
+
+    if(linguica > 0){
+		ingredientes_completos++;
+	}
+
+	if(pao_cachorroquente > 0){
+		ingredientes_completos++;
+	}
+
+	if(molho_de_tomate > 0){
+		ingredientes_completos++;
+	}
+
+	if(batata_palha > 0){
+		ingredientes_completos++;
+	}
+
+	if(caixa_cachorro_quente > 0){
+		ingredientes_completos++;
+	}
+
+	if(ingredientes_completos == 5){		
+		linguica--;
+        pao_cachorroquente--;
+        molho_de_tomate--;
+        batata_palha--;
+        caixa_cachorro_quente--;
+        cachorro_quente_pronto++;
+	}
+
 
 }
