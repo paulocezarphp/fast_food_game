@@ -1,7 +1,26 @@
 body{
-
+	background: #b30000;
+	font-family: sans-serif;
 }
 
 .game{
-	
+	background: #fff;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	width: 800px;
+	border-radius: 6px;
+}
+
+.game-container{
+    padding: 30px;
+
+}
+
+.game-title{
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 20px;
 }

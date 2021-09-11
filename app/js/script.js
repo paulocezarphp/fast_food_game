@@ -112,5 +112,11 @@ function Criar_CachorroQuente(){
         cachorro_quente_pronto++;
 	}
 
-
 }
+
+
+function Temporizador(){
+   
+}
+
+setInterval(Temporizador, 1000);
