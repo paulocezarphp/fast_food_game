@@ -7,6 +7,7 @@ var cachorro_quente_pronto = 0;
 //ingredientes para hamburguer
 var ovos = 0;
 var tomate = 0;
+var alface = 0;
 var carne = 0;
 var queijo = 0;
 var presunto = 0;
@@ -33,6 +34,10 @@ function Criar_Hamburguer(){
 	var ingredientes_completos = 0;
 
 	if(ovos > 0){
+		ingredientes_completos++;
+	}
+
+	if(alface > 0){
 		ingredientes_completos++;
 	}
 
@@ -64,8 +69,9 @@ function Criar_Hamburguer(){
 		ingredientes_completos++;
 	}
 
-	if(ingredientes_completos == 8){
+	if(ingredientes_completos == 9){
 		ovos--;
+		alface--;
 		tomate--;
 		carne--;
 		queijo--;
